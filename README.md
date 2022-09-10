@@ -4,18 +4,25 @@
 
 ## Description
 
-It is an application developed in Javascript to use the PBX IP Nuvem Fone click to call function. It is possible to register a costumer and make a call through a button, without the need to discard the number manually.
+It is an application developed in Javascript to use the click to call function of the IP Cloud Fone PBX. It is possible to register a customer and make a call using a button, without having to manually dial the number.
 
 ## Build With
 
-NodeJs - Build the native app using Javascript
-Bootstrap - Styles
-MongoDB - DB
-Express - Web Server
-Body-Parser - Middleware
-Mongoose - Connect and Model the DB
-Connect Flash - Handle success or failure messages
-Axios - HTTP Client
+- [NodeJs](https://github.com/nodejs) - Build the native app using Javascript
+
+- [Bootstrap](https://github.com/twbs/bootstrap) - Styles
+
+- [MongoDB](https://github.com/mongodb/mongo) - Database
+
+- [Express](https://github.com/expressjs/express) - Web Server
+
+- [Body-Parser](https://github.com/expressjs/body-parser) - Middleware
+
+- [Mongoose](https://github.com/Automattic/mongoose) - Connect and Model the DB
+
+- [Connect Flash](https://github.com/jaredhanson/connect-flash) - Handle success or failure messages
+
+- [Axios](https://github.com/axios/axios) - HTTP Client
 
 ## Questions or contributions
 
@@ -28,4 +35,4 @@ Email me: thiago.wav1@gmail.com
 Visit the website for more information about Nuvem Fone PBX: https://www.nuvemfone.com.br/
 
 ## License
-This project is licensed under the MIT License - see the LICENSE.md file for details.
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/thiagomedeiros11/jsctc/blob/main/LICENSE) file for details.
