@@ -1,0 +1,25 @@
+<h2>Customers List:</h2>
+<hr>
+<a href="/clicktocall/registration/"><button class="btn btn-success">New Costumer</button></a><br></br>
+
+{{#each customers}}
+<div class="card mt-4">
+    <div class="card-body">
+        <h4>{{name}}</h4>
+        <small>Phone Number: {{phone}}</small><br>
+        <small>Created at: {{date}}</small><br>
+	<a href="/clicktocall/customers/call/{{phone}}"> <button type="submit" class="btn btn-success mt-2">Call</button><br>
+        <a href="/clicktocall/customers/edit/{{_id}}"> <button type="submit "class="btn btn-success mt-2">Edit</button></a>
+        <form action="/clicktocall/customers/delete" method="POST">
+            <input type="hidden" name="id" value="{{_id}}">
+	    <input type="hidden" name="phone" value="{{phone}}">
+            <button type="submit" class="btn btn-danger mt-2">Delete</button><br>
+        </form>
+    </div>
+</div>
+
+{{else}}
+
+{{/each}}
+
+

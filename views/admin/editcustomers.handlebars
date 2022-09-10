@@ -1,0 +1,23 @@
+{{#each errors}}
+    <div class="alert alert-danger">{{text}}</div>
+
+{{else}}
+
+{{/each}}
+<h3>Edit Customer:</h3>
+<div class="card">
+    <div class="card-body">
+    <form action="/clicktocall/customers/edit" method="POST">
+    <input type="hidden" name="id" value="{{customers._id}}">
+    <label for="nome">Name: </label>
+        <input type="text" id="name" name="name" placeholder="Name" class="form-control" value="{{customers.name}}">
+        <br>
+    <label for="phone">Phone Number: </label>
+        <input type="text" id="phone" name="phone" placeholder="Phone Number" class="form-control" value="{{customers.phone}}">
+        <br>
+        <button type="submit" class="btn btn-success">Edit Customer</button>
+    </form>
+    </div>
+</div>
+
+

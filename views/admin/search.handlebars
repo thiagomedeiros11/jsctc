@@ -1,0 +1,26 @@
+{{#each errors}}
+    <div class="alert alert-danger">{{text}}</div>
+
+{{else}}
+
+{{/each}}
+
+{{!-- search --}}
+<nav class="navbar navbar-light bg-light">
+  <form class="form-inline" action="/clicktocall/customers/search" method="POST">
+    <input id="name" name="name" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" >
+    <button class="btn btn-success mt-2" type="submit">Search</button>
+  </form>
+</nav><br></br>
+
+{{!-- retorno do search --}}
+<h2>Search Result:</h2>
+<div class="card mt-4">
+    <div class="card-body">
+        {{#each thiago}}
+        <h4>{{name}}</h4>
+        <small>{{phone}}</small>
+        {{else}}
+        {{/each}}
+    </div>
+</div>
