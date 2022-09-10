@@ -4,7 +4,7 @@
 
 ## Description
 
-It is an application developed in Javascript to use the click to call function of the IP Cloud Fone PBX. It is possible to register a customer and make a call using a button, without having to manually dial the number.
+It is an application developed in Javascript to use the click to call function of the Nuvem Fone PBX IP. It is possible to register a customer and make a call using a button, without having to manually dial the number.
 
 ## Build With
 
